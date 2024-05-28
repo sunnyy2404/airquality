@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            height:50%;
+            background-image: url("https://www.aqi.in/share/real-time-aqi-air-quality-index.jpg");
+            background-size: cover;
+
+        }
+        .dropdown div{
+            align-items: center;
+        }
+        button{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: bold;
+                color:rgb(10, 10, 10);
+                text-align: center;
+                border-radius: 20px;
+                height:150px;
+                width: 1155px;
+                background-color: transparent;
+            }
+        .dropdown-content a {
+                font-family: Times, serif;
+                float: none;
+                color: black;
+                font-size: 25px;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+        }
+        .dropdown:hover .dropdown-content {
+                display: block;
+        }
+        .dropdown-content a:hover {
+                background-color: #ddd;
+        }
+    </style>
+    <body>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Select Algorithm
+            </button>
+            <div class="dropdown-content">
+                <a href="http://localhost:8000/display">
+                    Prediction Using XGBoost Regressor
+                </a>
+                <a href="http://localhost:8000/rfrinput">Prediction using Random Forest Regressor</a>
+                <a href="http://localhost:8000/dtrinput">Prediction using Decision Tree Regressor</a>
+            </div>
+        </div>
+        
+    </body>
+    
+</html>

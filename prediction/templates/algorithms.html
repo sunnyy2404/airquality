@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prediction Result</title>
+        <background></background>
+        <style>
+        body, html{
+                height:50%;
+                background-image: url("https://www.aqi.in/share/real-time-aqi-air-quality-index.jpg");
+                background-size: cover;
+        }
+        table {
+            width: 100%;
+            }
+        th{
+            font:bold;
+            border: 1px solid;
+        }
+        td,tr{
+            height: 70px;
+            text-align: center;
+            border: 1px solid #080707;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Algorithms</th>
+                
+                <th>Accuracy</th>
+            </tr>
+            <tr>
+                <td>XGBoost</td>
+                
+                <td>95.6%</td>
+                
+            </tr>
+            <tr>
+                <td>Random Forest</td>
+                
+                <td>95.1%</td>
+            </tr>
+            <tr>    
+                <td>Decision Tree</td>
+                
+                <td>84.05%</td>
+    
+            </tr>
+        </table>
+    </body>
+</html>
